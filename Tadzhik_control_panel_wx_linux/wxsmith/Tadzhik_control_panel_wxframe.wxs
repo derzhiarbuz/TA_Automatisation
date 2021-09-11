@@ -143,7 +143,7 @@
 				<size>88,34</size>
 			</object>
 			<object class="wxStaticText" name="ID_STATICTEXT3" variable="XYZText" member="yes">
-				<label>XYZ =</label>
+				<label>XYZ = SVETA KONFETA</label>
 				<pos>16,504</pos>
 				<size>256,32</size>
 				<fg>#0000A0</fg>
