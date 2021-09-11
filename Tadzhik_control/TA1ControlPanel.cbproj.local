@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.839,=C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.706,C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\TA1Panel.dfm=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.286,C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\CNC_Manager.h=C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\File1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.062,=C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\File1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.633,=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.491,=C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\CNCManager.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.706,C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\TA1Panel.h=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.706,C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\TA1Panel.cpp=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.174,=C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\CNCManager.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.942,C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\TA1ControlPanelPCH1.h=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.401,=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.658,C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\CNC_Manager.cpp=C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.181,=C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\Serial.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.499,=C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\Serial.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.081,C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\TA1ControlPanel.cbproj=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.588,C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\Serial.h=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.831,=C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\Serial.h</Transaction>
+  </Transactions>
+</BorlandProject>

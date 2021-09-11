@@ -1,0 +1,227 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 573
+  ClientWidth = 896
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Viewport3D: TViewport3D
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 553.000000000000000000
+    Size.Height = 265.000000000000000000
+    Size.PlatformDefault = False
+    object AnimationDummy: TDummy
+      Position.X = 0.295056849718093900
+      Position.Y = 4.000000000000000000
+      Scale.X = 0.029999999329447750
+      Scale.Y = 0.029999999329447750
+      Scale.Z = 0.029999999329447750
+      RotationAngle.X = 358.290954589843800000
+      RotationAngle.Y = 72.624549865722660000
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      Quanternion = 
+        '(-0.561225295066833,-0.424938231706619,0.412445724010468,-0.5782' +
+        '23466873169)'
+      object FloatAnimation1: TFloatAnimation
+        Enabled = True
+        Duration = 20.000000000000000000
+        Loop = True
+        PropertyName = 'RotationAngle.Z'
+        StartValue = 0.000000000000000000
+        StopValue = 360.000000000000000000
+      end
+      object ObjectDummy: TDummy
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+      end
+    end
+    object Light1: TLight
+      Color = claWhite
+      LightType = Directional
+      SpotCutOff = 180.000000000000000000
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+    end
+  end
+  object LogMemo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 8.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 553.000000000000000000
+    Size.Height = 291.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Left = 8
+    Top = 472
+    Viewport.Width = 549.000000000000000000
+    Viewport.Height = 287.000000000000000000
+  end
+  object LoadButton: TButton
+    Position.X = 576.000000000000000000
+    Position.Y = 464.000000000000000000
+    TabOrder = 17
+    Text = 'Load G-Code'
+    OnClick = LoadButtonClick
+  end
+  object OpenDialog1: TOpenDialog
+    FileName = 'C:\Projects\Tadzhik\TA_Automatisation\Tadzhik_control\TA1Panel.h'
+    Left = 528
+    Top = 473
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    Left = 528
+    Top = 529
+  end
+  object GCodeListBox: TListBox
+    Position.X = 568.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 449.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    OnClick = GCodeListBoxClick
+    OnMouseDown = GCodeListBoxMouseDown
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 317.000000000000000000
+    Viewport.Height = 445.000000000000000000
+  end
+  object StartButton: TButton
+    Position.X = 688.000000000000000000
+    Position.Y = 464.000000000000000000
+    Size.Width = 64.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Text = 'Start'
+    OnClick = StartButtonClick
+  end
+  object PauseButton: TButton
+    Position.X = 760.000000000000000000
+    Position.Y = 464.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    Text = 'Pause'
+    OnClick = PauseButtonClick
+  end
+  object StopButton: TButton
+    Position.X = 832.000000000000000000
+    Position.Y = 464.000000000000000000
+    Size.Width = 56.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'Stop'
+  end
+  object PortCombo: TComboEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 21
+    ItemHeight = 19.000000000000000000
+    Items.Strings = (
+      'COM1'
+      'COM2'
+      'COM3'
+      'COM4'
+      'COM5'
+      'COM6'
+      'COM7'
+      'COM8'
+      'COM9'
+      'COM10'
+      'COM11'
+      'COM12'
+      'COM13'
+      'COM14'
+      'COM15'
+      'COM16'
+      'COM17'
+      'COM18'
+      'COM19'
+      'COM20')
+    ItemIndex = 3
+    Text = 'COM4'
+    Position.X = 664.000000000000000000
+    Position.Y = 496.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ConnectionLabel: TLabel
+    Position.X = 576.000000000000000000
+    Position.Y = 496.000000000000000000
+    Size.Width = 112.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'No connection'
+  end
+  object ConnectButton: TButton
+    Position.X = 744.000000000000000000
+    Position.Y = 496.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = 'Connect'
+    OnClick = ConnectButtonClick
+  end
+  object DisconnectButton: TButton
+    Position.X = 824.000000000000000000
+    Position.Y = 496.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = 'Disconnect'
+    OnClick = DisconnectButtonClick
+  end
+  object CommandEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Position.X = 576.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    Left = 567
+    Top = 532
+  end
+  object SendCommandButton: TButton
+    Position.X = 832.000000000000000000
+    Position.Y = 528.000000000000000000
+    Size.Width = 56.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Send'
+    OnClick = SendCommandButtonClick
+  end
+  object ColorMaterialSource1: TColorMaterialSource
+    Color = claPeru
+    Left = 408
+    Top = 152
+  end
+  object LightMaterialSource1: TLightMaterialSource
+    Diffuse = claPeru
+    Ambient = xFF65472B
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 100
+    Left = 464
+    Top = 208
+  end
+end

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1508142762 source:c:\projects\tadzhik\ta_automatisation\vase_generator_codeblocks\main.cpp
+	<math.h>
+	<iostream>
+	<stdio.h>
+	<conio.h>
+	<fstream>
+

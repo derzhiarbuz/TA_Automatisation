@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.593,=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.248,C:\Projects\Tadzhik\TA_Automatisation\Encoder_noise\Encoder_noise_project.cbproj=C:\Projects\Tadzhik\TA_Automatisation\Encoder_noise\FG_Automatisation_project.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.912,C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Projects\Foamglass\FG_Automatisation\FG_Automatisation_project.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.447,C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Projects\Foamglass\FG_Automatisation\FG_Automatisation.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.447,C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Projects\Foamglass\FG_Automatisation\FG_Automatisation.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.810,=C:\Projects\Foamglass\FG_Automatisation\Serial.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.447,C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Projects\Foamglass\FG_Automatisation\FG_Automatisation.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.576,=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.980,C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Projects\Foamglass\FG_Automatisation\FG_Automatisation_proj.h</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.980,C:\Projects\Foamglass\FG_Automatisation\FG_Automatisation_proj.h=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.912,C:\Projects\Foamglass\FG_Automatisation\FG_Automatisation_project.cbproj=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.593,=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.447,C:\Projects\Foamglass\FG_Automatisation\FG_Automatisation.cpp=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.447,C:\Projects\Foamglass\FG_Automatisation\FG_Automatisation.dfm=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.447,C:\Projects\Foamglass\FG_Automatisation\FG_Automatisation.h=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.810,=C:\Projects\Foamglass\FG_Automatisation\Serial.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.576,=C:\Users\HP 15\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+  </Transactions>
+</BorlandProject>
