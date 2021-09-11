@@ -31,12 +31,12 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-Wall" />
 			<Add option="`wx-config --cflags`" />
 			<Add option='[[if (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.8.0&quot;)) print(_T(&quot;-Wno-unused-local-typedefs&quot;));]]' />
-			<Add option="-Wall" />
 		</Compiler>
 		<Linker>
-			<Add option="`wx-config --libs`" />
+			<Add option="`wx-config --libs all`" />
 		</Linker>
 		<Unit filename="CNCManager.cpp" />
 		<Unit filename="CNCManager.h" />
