@@ -122,26 +122,17 @@ Tadzhik_control_panel_wxFrame::Tadzhik_control_panel_wxFrame(wxWindow* parent,wx
     StaticText1 = new wxStaticText(Panel1, ID_STATICTEXT1, _("Log"), wxPoint(912,8), wxDefaultSize, 0, _T("ID_STATICTEXT1"));
     LogTextCtrl = new wxTextCtrl(Panel1, ID_TEXTCTRL3, wxEmptyString, wxPoint(904,24), wxSize(288,472), wxTE_MULTILINE, wxDefaultValidator, _T("ID_TEXTCTRL3"));
     portChoice = new wxChoice(Panel1, ID_CHOICE1, wxPoint(904,504), wxSize(104,32), 0, 0, 0, wxDefaultValidator, _T("ID_CHOICE1"));
-    portChoice->Append(_("COM1"));
-    portChoice->Append(_("COM2"));
-    portChoice->Append(_("COM3"));
-    portChoice->Append(_("COM4"));
-    portChoice->Append(_("COM5"));
-    portChoice->Append(_("COM6"));
-    portChoice->Append(_("COM7"));
-    portChoice->Append(_("COM8"));
-    portChoice->Append(_("COM9"));
-    portChoice->Append(_("COM10"));
-    portChoice->Append(_("COM11"));
-    portChoice->Append(_("COM12"));
-    portChoice->Append(_("COM13"));
-    portChoice->Append(_("COM14"));
-    portChoice->SetSelection( portChoice->Append(_("COM15")) );
-    portChoice->Append(_("COM16"));
-    portChoice->Append(_("COM17"));
-    portChoice->Append(_("COM18"));
-    portChoice->Append(_("COM19"));
-    portChoice->Append(_("COM20"));
+    portChoice->Append(_("/dev/ttyS0"));
+    portChoice->Append(_("/dev/ttyS1"));
+    portChoice->Append(_("/dev/ttyS2"));
+    portChoice->Append(_("/dev/ttyS3"));
+    portChoice->Append(_("/dev/ttyS4"));
+    portChoice->Append(_("/dev/ttyS5"));
+    portChoice->Append(_("/dev/ttyS6"));
+    portChoice->Append(_("/dev/ttyS7"));
+    portChoice->Append(_("/dev/ttyS8"));
+    portChoice->Append(_("/dev/ttyS9"));
+    portChoice->Append(_("/dev/ttyS10"));
     ConnectButtom = new wxButton(Panel1, ID_BUTTON4, _("Connect"), wxPoint(1016,504), wxSize(80,34), 0, wxDefaultValidator, _T("ID_BUTTON4"));
     DisconnectButton = new wxButton(Panel1, ID_BUTTON5, _("Disconnect"), wxPoint(1104,504), wxSize(88,34), 0, wxDefaultValidator, _T("ID_BUTTON5"));
     CommandTextCtrl = new wxTextCtrl(Panel1, ID_TEXTCTRL4, wxEmptyString, wxPoint(904,552), wxSize(184,21), 0, wxDefaultValidator, _T("ID_TEXTCTRL4"));
@@ -153,7 +144,7 @@ Tadzhik_control_panel_wxFrame::Tadzhik_control_panel_wxFrame(wxWindow* parent,wx
     wxFont StopButtonFont(10,wxFONTFAMILY_SWISS,wxFONTSTYLE_NORMAL,wxFONTWEIGHT_NORMAL,false,wxEmptyString,wxFONTENCODING_DEFAULT);
     StopButton->SetFont(StopButtonFont);
     Button2 = new wxButton(Panel1, ID_BUTTON9, _("Pause"), wxPoint(800,544), wxSize(88,34), 0, wxDefaultValidator, _T("ID_BUTTON9"));
-    XYZText = new wxStaticText(Panel1, ID_STATICTEXT3, _("XYZ ="), wxPoint(16,504), wxSize(256,32), 0, _T("ID_STATICTEXT3"));
+    XYZText = new wxStaticText(Panel1, ID_STATICTEXT3, _("XYZ = SVETA KONFETA"), wxPoint(16,504), wxSize(256,32), 0, _T("ID_STATICTEXT3"));
     XYZText->SetForegroundColour(wxColour(0,0,160));
     wxFont XYZTextFont(20,wxFONTFAMILY_DEFAULT,wxFONTSTYLE_NORMAL,wxFONTWEIGHT_BOLD,false,_T("Rasa"),wxFONTENCODING_DEFAULT);
     XYZText->SetFont(XYZTextFont);
@@ -185,6 +176,7 @@ Tadzhik_control_panel_wxFrame::Tadzhik_control_panel_wxFrame(wxWindow* parent,wx
 
     Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&Tadzhik_control_panel_wxFrame::OnMakePathButtonClick);
     Connect(ID_BUTTON2,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&Tadzhik_control_panel_wxFrame::OnSmoothPathButtonClick);
+    Connect(ID_CHOICE1,wxEVT_COMMAND_CHOICE_SELECTED,(wxObjectEventFunction)&Tadzhik_control_panel_wxFrame::OnportChoiceSelect);
     Connect(ID_BUTTON4,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&Tadzhik_control_panel_wxFrame::OnConnectButtomClick);
     Connect(ID_BUTTON5,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&Tadzhik_control_panel_wxFrame::OnDisconnectButtonClick);
     Connect(ID_BUTTON6,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&Tadzhik_control_panel_wxFrame::OnSendButtonClick);
@@ -275,7 +267,7 @@ void Tadzhik_control_panel_wxFrame::OnSmoothPathButtonClick(wxCommandEvent& even
 void Tadzhik_control_panel_wxFrame::OnConnectButtomClick(wxCommandEvent& event)
 {
     (*LogTextCtrl)<<"Connecting to printer...\n";
-    printerController.connectToPrinter(portChoice->GetSelection()+1, 115200);
+    printerController.connectToPrinter(portChoice->GetSelection(), 115200);
     if(printerController.connectedToPrinter())
         (*LogTextCtrl)<<"Connected\n";
     else
@@ -336,4 +328,8 @@ void Tadzhik_control_panel_wxFrame::OnStartPrintheadButtonClick(wxCommandEvent& 
 void Tadzhik_control_panel_wxFrame::OnStopPrintheadButtonClick(wxCommandEvent& event)
 {
     printerController.stopPrinthead();
+}
+
+void Tadzhik_control_panel_wxFrame::OnportChoiceSelect(wxCommandEvent& event)
+{
 }

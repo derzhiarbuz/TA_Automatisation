@@ -3,3 +3,4 @@
 /Tadzhik_control_panel_wxApp.o
 /Tadzhik_control_panel_wxMain.o
 /Unit_test_main.o
+*.o

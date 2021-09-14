@@ -56,6 +56,7 @@ class Tadzhik_control_panel_wxFrame: public wxFrame, public TadzhikControllerDel
         void OnSetVelocityButtonClick(wxCommandEvent& event);
         void OnStartPrintheadButtonClick(wxCommandEvent& event);
         void OnStopPrintheadButtonClick(wxCommandEvent& event);
+        void OnportChoiceSelect(wxCommandEvent& event);
         //*)
 
         //(*Identifiers(Tadzhik_control_panel_wxFrame)

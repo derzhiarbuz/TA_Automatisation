@@ -9,7 +9,7 @@ bool CNCManager::connect(int port, int nBaud) {
     string s;
     stringstream ss;
     ss<<port;
-    s = "//./COM" + ss.str();
+    s = "/dev/ttyACM" + ss.str();
     _serial.SetPort(s);
     _serial.SetBaudRate(nBaud);
     _serial.SetDataSize(8);
