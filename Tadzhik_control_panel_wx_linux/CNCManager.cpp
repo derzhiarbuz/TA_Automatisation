@@ -116,6 +116,7 @@ void CNCManager::processTelemetry(uint8_t *data, int length) {
     int16_t checksum, *received_checksum;
     bool correct;
 
+    checksum=0;
     for(int i=1; i<length-2; i++)
         checksum += data[i];
 

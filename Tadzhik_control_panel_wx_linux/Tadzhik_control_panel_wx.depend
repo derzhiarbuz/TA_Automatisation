@@ -1746,7 +1746,7 @@
 	<wx/intl.h>
 	<wx/string.h>
 
-1631381270 source:/home/derzhiarbuz/TA_Automatisation/Tadzhik_control_panel_wx_linux/CNCManager.cpp
+1631602763 source:/home/derzhiarbuz/TA_Automatisation/Tadzhik_control_panel_wx_linux/CNCManager.cpp
 	"CNCManager.h"
 	<string>
 	<stdlib.h>
@@ -1814,7 +1814,7 @@
 	<wx/intl.h>
 	<wx/string.h>
 
-1631381270 source:/home/derzhiarbuz/TA_Automatisation/Tadzhik_control_panel_wx_linux/TadzhikController.cpp
+1631690859 source:/home/derzhiarbuz/TA_Automatisation/Tadzhik_control_panel_wx_linux/TadzhikController.cpp
 	"TadzhikController.h"
 
 1526629542 source:/home/derzhiarbuz/Projects/Tadzhik/TA_Automatisation/Tadzhik_control_panel_wx_linux/CNCManager.cpp
